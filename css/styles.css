@@ -1,17 +1,32 @@
-#cta{
-    text-align:center;
-}
 #title {
     background-color: #ff4c68;
     color: #fff;
 }
-
+#cta{
+    text-align: center;
+    background-color: #ff4c68;
+}
 #features {
     padding: 7% 20% 7%;
     margin: auto;
+    background-color: white;
+    position: relative;
+}
+#footer{
+    background-color: white;
+    text-align: center;
+    padding: 3%;
+}
+#end-statement{
+    font-family: "Montserrat";
+    font-weight: 900;
+    color: white;
+    font-size: 2rem;
+    margin: 0 auto;
+    width: 50%;
+    line-height: 2;
 
 }
-
 #press {
     background-color: #ef8172;
     text-align: center;
@@ -33,9 +48,7 @@
 body {
     font-family: "Montserrat";
 }
-footer{
-    text-align:center;
-}
+
 h1 {
     font-family: "Montserrat";
     font-weight: 900;
@@ -66,20 +79,22 @@ p {
 }
 
 .container-fluid {
-    padding: 3% 15%;
+    padding: 3% 15% 7%;
 }
 
 .download-btn {
     margin: 5% 3% 5% 0%;
 }
-
+.foot-btn{
+    margin-top: 10px;
+}
 .featcon {
     font-size: 4rem;
-    color: #ef8172;
+    color: #4e3a37;
     margin-bottom: 1rem;
 }
 
-.fas:hover {
+.f-icon:hover {
     color: #ff4c68;
 }
 
@@ -87,10 +102,14 @@ p {
     text-align: center;
     padding: 5%;
 }
-
+.foot-icon{
+    margin: 3rem 1rem;
+}
 .iphone {
     transform: rotate(25deg);
     width: 60%;
+    position: absolute;
+    right: 35%;
 }
 
 .navbar {
@@ -127,4 +146,14 @@ p {
     width: 10%;
     border-radius: 100%;
     margin: 1.5%;
+}
+
+@media (max-width: 1024px){
+    .iphone{
+        position: static;
+        transform: rotate(0deg);
+    }
+    #title{
+        text-align: center;
+    }
 }

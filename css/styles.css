@@ -1,77 +1,14 @@
-#title {
-    background-color: #ff4c68;
-    color: #fff;
-}
-
-#cta {
-    text-align: center;
-    background-color: #ff4c68;
-}
-
-#features {
-    padding: 7% 20% 7%;
-    margin: auto;
-    background-color: white;
-    position: relative;
-}
-
-#footer {
-    background-color: white;
-    text-align: center;
-    padding: 3%;
-}
-
-#end-statement {
-    font-family: "Montserrat";
-    font-weight: 900;
-    color: white;
-    font-size: 2rem;
-    margin: 0 auto;
-    width: 50%;
-    line-height: 2;
-
-}
-
-#press {
-    background-color: #ef8172;
-    text-align: center;
-    padding-bottom: 3%;
-}
-
-#pricing {
-    padding: 100px;
-    text-align: center;
-}
-
-#testimonials {
-    text-align: center;
-    background-color: #ef8172;
-    color: #fff;
-}
-
-
 body {
     font-family: "Montserrat";
+    text-align: center;
 }
 
-h1 {
-    font-family: "Montserrat";
-    font-weight: 900;
-    font-size: 3.5rem;
-    line-height: 1.5;
-}
-
-h2 {
-    font-family: "Montserrat";
-    font-size: 3rem;
+h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
-    line-height: 1.5;
 }
 
 h3 {
     padding: 5%;
-    font-family: "Montserrat";
-    font-weight: 700;
     font-size: 1.5rem;
 }
 
@@ -79,46 +16,18 @@ p {
     color: #8f8f8f;
 }
 
-.carousel-item {
-    padding: 7% 20%;
-}
-
 .container-fluid {
+    padding: 7% 15%;
+}
+
+/* NavBar */
+#title {
+    background-color: #ff4c68;
+    color: #fff;
+    text-align: left;
+}
+#title .container-fluid{
     padding: 3% 15% 7%;
-}
-
-.download-btn {
-    margin: 5% 3% 5% 0%;
-}
-
-.foot-btn {
-    margin-top: 10px;
-}
-
-.featcon {
-    font-size: 4rem;
-    color: #4e3a37;
-    margin-bottom: 1rem;
-}
-
-.f-icon:hover {
-    color: #ff4c68;
-}
-
-.feature-box {
-    text-align: center;
-    padding: 5%;
-}
-
-.foot-icon {
-    margin: 3rem 1rem;
-}
-
-.iphone {
-    transform: rotate(25deg);
-    width: 60%;
-    position: absolute;
-    right: 35%;
 }
 
 .navbar {
@@ -141,21 +50,139 @@ p {
     font-weight: 300;
 }
 
+
+
+/* Title */
+
+.big-heading {
+    font-weight: 900;
+    font-size: 3.5rem;
+    line-height: 1.5;
+    padding-top: 7%;
+}
+
+.download-btn {
+    margin: 5% 3% 5% 0%;
+}
+
+.iphone {
+    transform: rotate(25deg);
+    width: 60%;
+    position: absolute;
+    right: 35%;
+}
+
+
+/* features */
+
+#features {
+    margin: auto;
+    background-color: white;
+    position: relative;
+}
+
+.feature-box {
+    padding: 5%;
+}
+
+.feature-icon {
+    font-size: 4rem;
+    color: #4e3a37;
+    margin-bottom: 1rem;
+}
+
+.feature-icon:hover {
+    color: #ff4c68;
+}
+
+.feature-title {
+    padding: 5%;
+    font-size: 1.5rem;
+}
+
+
+/* Press */
+#press {
+    background-color: #ef8172;
+    padding-bottom: 3%;
+}
+
 .press-img {
     width: 15%;
     margin: 20px 20px 50px;
+}
 
+
+
+/* Pricing */
+
+#pricing {
+    padding: 100px;
 }
 
 .pricing-column {
     padding: 3% 2%;
 }
 
+.price-text {
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+
+/* Testimonal */
+#testimonials {
+    background-color: #ef8172;
+    color: #fff;
+}
+
 .testimonial-image {
     width: 10%;
-    border-radius: 100%;    
+    border-radius: 100%;
     margin: 1.5%;
 }
+
+.testimonial-text {
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+
+
+/* Call To Action */
+
+#cta {
+    background-color: #ff4c68;
+}
+#cta .container-fluid{
+    padding: 0%;
+}
+#end-statement {
+    font-weight: 900;
+    color: white;
+    font-size: 2rem;
+    margin: 0 auto;
+    width: 70%;
+    line-height: 2;
+    padding: 5%;
+}
+
+.foot-btn {
+    margin-top: 10px;
+}
+
+
+/* Footer */
+#footer .container-fluid{
+    background-color: white;
+    padding: 3%;
+}
+.foot-icon {
+    margin: 3rem 1rem;
+}
+
+
+/* Mobile-optimization */
 
 @media (max-width: 1024px) {
     .iphone {
@@ -170,10 +197,18 @@ p {
     .testimonial-text {
         font-size: 1.5rem;
     }
-    h1{
+
+    .big-heading {
         font-size: 3rem;
     }
-    #cta{
+
+    #cta {
         font-size: 1.5rem;
     }
+    #pricing{
+        padding: 100px 20px;
+    }
+    .container-fluid {
+        padding: 7% 10%;
+    }    
 }

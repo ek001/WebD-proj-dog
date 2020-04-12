@@ -1,3 +1,6 @@
+#cta{
+    text-align:center;
+}
 #title {
     background-color: #ff4c68;
     color: #fff;
@@ -30,7 +33,9 @@
 body {
     font-family: "Montserrat";
 }
-
+footer{
+    text-align:center;
+}
 h1 {
     font-family: "Montserrat";
     font-weight: 900;
